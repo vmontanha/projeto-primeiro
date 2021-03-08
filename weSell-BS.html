@@ -21,39 +21,12 @@
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.css" rel="stylesheet">
 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
 </head>
 
 <body id="page-top">
-
-  <!-- Navigation -->
-  <a class="menu-toggle rounded" href="#">
-    <i class="fas fa-bars"></i>
-  </a>
-  <nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-      <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">We Sell BS</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="index.html">We Sell</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#about">We Sell Academy</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#services">We Sell TV</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">WS News</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">WSTE</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#contact">Call to Action</a>
-      </li>
-    </ul>
-  </nav>
 
   <!-- Header -->
   <header class="masthead-bs d-flex">
@@ -62,11 +35,29 @@
       <h3 class=" texto-inicial mt-5">
         <em>Soulução Empresarial</em>
       </h3>
-      <a class="btn btn-primary btn-xl js-scroll-trigger mt-5" href="#about">Encontre mais aqui</a>
+      <a class="btn btn-primary btn-xl js-scroll-trigger mt-5" href="#footer">Começar agora</a>
     </div>
     <div class="overlay"></div>
   </header>
-
+  <div class="navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto">
+                          <li class="nav-item active"><a class="page-scroll" data-toggle="tooltip" data-placement="top" title="Soluções" href="#about">WSBS</a></li>
+                          <li class="nav-item"><a class="page-scroll" data-toggle="tooltip" data-placement="top" title="Educação" href="#about">WSA</a></li>
+                          <li class="nav-item"><a class="page-scroll" data-toggle="tooltip" data-placement="top" title="Conteúdo" href="#service">WSTV & NeWS</a></li>
+                          <li class="nav-item"><a class="page-scroll" data-toggle="tooltip" data-placement="top" title="Equipe"  href="#about">WSTE</a></li>
+                          <li class="nav-item"><a class="page-scroll" data-toggle="tooltip" data-placement="top" title="Contato"  href="#work">CTA</a></li>
+                        </ul>
+                    </div> <!-- navbar collapse -->
+                </nav> <!-- navbar -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</div> <!-- navigation -->
   <!-- About 
   <section class="content-section bg-light" id="about">
     <div class="container text-center">
@@ -207,22 +198,6 @@
   </section> -->
 
   <!-- Footer -->
-  <nav>
-    <ul class="nav nav-pills nav-fill">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Inicio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Blog</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Sobre Nos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">O que somos</a>
-      </li>
-    </ul>
-  </nav>
   <footer class="footer text-center">
     <div class="container">
       <ul class="list-inline mb-5">
@@ -255,6 +230,12 @@
   <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
     <i class="fas fa-angle-up"></i>
   </a>
+
+  <script>
+    $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+  </script>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
